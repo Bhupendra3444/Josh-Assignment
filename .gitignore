@@ -1,0 +1,31 @@
+# Gradle state and caches
+.gradle/
+**/.gradle/
+temp-gradle/
+
+# Build outputs and intermediates
+build/
+**/build/
+**/bin/
+**/out/
+
+# Gradle distributions
+gradle-*-bin.zip
+
+# IDE/editor files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Android tooling
+local.properties
+*.keystore
+*.jks
+*.ap_
+*.apk
+*.aab
+
+# Logs and misc
+*.log

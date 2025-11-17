@@ -1,0 +1,29 @@
+CREATE TABLE TaskEntity (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    task_type TEXT NOT NULL,
+    text TEXT,
+    image_url TEXT,
+    image_path TEXT,
+    audio_path TEXT,
+    duration_sec INTEGER NOT NULL,
+    timestamp_iso TEXT NOT NULL,
+    metadata TEXT
+);
+
+selectAll:
+SELECT * FROM TaskEntity ORDER BY id DESC;
+
+insertTask:
+INSERT INTO TaskEntity(
+    task_type,
+    text,
+    image_url,
+    image_path,
+    audio_path,
+    duration_sec,
+    timestamp_iso,
+    metadata
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+
+clearAll:
+DELETE FROM TaskEntity;
