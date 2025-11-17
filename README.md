@@ -93,6 +93,4 @@ Runs the Compose Desktop window with stubbed platform services.
 3. Upload `androidApp/build/outputs/apk/release/androidApp-release.apk` (or signed variant).
 4. Tag + push the repository once QA passes.
 
-## License
 
-Internal prototype for the provided assignment; no open-source license specified.
